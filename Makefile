@@ -25,6 +25,7 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 
 docs: reports/qmd_example.html results
 	mkdir -p docs
+	touch docs/.nojekyll
 	cp reports/qmd_example.html docs/index.html
 	cp -r reports/qmd_example_files docs/
 	cp -r results docs/
